@@ -1,27 +1,25 @@
-
-/* Header Section */
 /* General styling */
 * {
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Navbar Section */
+/* Navbar Section start*/
+/* Header Section */
 .header {
     background: url('/Assets/hero-9-bg-shape-cover.png') no-repeat center center/cover;
-    height: 100vh;
+    height: 90vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    text-align: center;
     position: relative;
 }
 
 .navbar {
     display: flex;
-    justify-content: space-between;
+
     align-items: center;
     width: 100%;
     padding: 20px 190px;
@@ -62,6 +60,7 @@
 .navbar-end ul {
     list-style-type: none;
     display: flex;
+    margin-left: 380px;
 }
 
 .navbar-end li {
@@ -77,10 +76,13 @@
 
 /* Join Us Button Styling */
 .btn-join {
-    padding: 8px 16px;
+    height:52px;
+    width:138px;
+    padding: 10px 25px;
     background-color: #96BB7C;
     color:white;
-    border-radius: 5px;
+    border-radius: 5%;
+    font-weight: bold;
     transition: background-color 0.3s ease;
 }
 .navbar-end .btn-join {
@@ -90,43 +92,178 @@
 .btn-join:hover {
     background-color: #b2d896;
 }
+/* navigation section end */
 
-/* Hero Section */
+/* Hero Section start*/
 .parent-hero-section {
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    height: 70vh; 
+    padding: 0 30px; 
+}
+
+.hero-section {
+    width: 55%;
+    align-items: flex-start;
     justify-content: center;
+    text-align: left; 
 }
 
 .hero-section h2 {
     font-size: 48px;
     color: #252B42;
-    margin-bottom: 10px;
+    width:512px;
 }
 
 .hero-section p {
     font-size: 20px;
-    color: #eee;
+    color: #96BB7C;
+    line-height: 1.5;
+    padding:30px 0px;
+    width:512px;  
+}
+.hero-text{
+    font-weight: bold;
+    padding:30px;
 }
 
-
-/* About Section */
-.about-section {
-    padding: 60px 0;
-    background-color: #f4f4f4;
-    text-align: center;
+.hero-img {
+    width: 45%;
+    height:95vh;
+    margin-top:70px;
+    display: flex;
+    justify-content: flex-end;
 }
 
-.about-section h2 {
-    font-size: 36px;
-    margin-bottom: 20px;
+.hero-img img {
+    max-width: 100%; 
+    height: auto;
+}
+.quote-btn{
+    padding:15px 40px;
+    width: 195px;
+    height:52px;
+    color:#FFFFFF;
+    font-weight:bold;
+    background-color: #96BB7C;
+    border:none;
+    border-radius: 5%;
+}
+.learn-btn{
+    padding:15px 40px;
+    width: 162px;
+    height:52px;
+    color:#96BB7C;
+    font-weight: bold;
+    background-color: #FFFFFF;
+    border-color:#96BB7C;
+    border-radius: 5%;
+}
+/* hero section end */
+
+/* Courses Section start*/
+
+.container {
+    max-width: 1200px;
+    padding: 20px;
+    text-align: left;
 }
 
-.about-section p {
+.courses-section {
+    padding: 50px 0;
+}
+
+.section-subtitle {
+    color: #96BB7C;
     font-size: 18px;
-    max-width: 800px;
-    margin: 0 auto 30px;
+    font-weight: bold;
+    margin-bottom: 10px;
 }
+
+.section-title {
+    font-size: 36px;
+    font-weight: bold;
+    color: #252B42;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.section-description {
+    font-size: 16px;
+    color: #737373;
+    margin-bottom: 40px;
+    font-weight: bold;
+}
+
+/* Cards Container */
+.courses-cards {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+/* Course Card */
+.course-card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+    width: 23%;
+    height:288px;
+    
+    transition: transform 0.3s ease;
+}
+
+.course-card img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 15px;
+}
+
+.course-card h4 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #252B42;
+    margin-bottom: 10px;
+}
+
+.hr-line{
+height: 3px;
+width:50px;
+background-color: #E74040;
+margin:0 0;
+border:none;
+}
+.hr-white{
+    height: 3px;
+width:50px;
+background-color: #FFFFFF;
+border:none;
+margin:0 0;
+}
+.course-card p {
+    font-size: 14px;
+    color: #737373;
+    margin-bottom: 10px;
+    margin-top:10px;
+}
+
+.course-card:hover {
+    transform: translateY(-10px);
+}
+
+/* Active Card Style */
+.active-card {
+    background-color: #96BB7C;
+    color: #fff;
+}
+
+.active-card h4,
+.active-card p {
+    color: #fff;
+}
+
 
 /* Services Section */
 .services-section {
@@ -153,6 +290,7 @@
 
 .service-card img {
     margin-bottom: 15px;
+    
 }
 
 .service-card h3 {
