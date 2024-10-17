@@ -82,9 +82,11 @@
     padding: 10px 25px;
     background-color: #96BB7C;
     color:white;
+    border:none;
     border-radius: 5%;
     font-weight: bold;
     transition: background-color 0.3s ease;
+    margin:5px 0;
 }
 .navbar-end .btn-join {
     color:white;
@@ -127,6 +129,7 @@
 .hero-text{
     font-weight: bold;
     padding:30px;
+    color:#96BB7C;
 }
 
 .hero-img {
@@ -422,8 +425,8 @@ margin:35px 0px;
     color: #FFFFFF;
     background-color: #2D4059;
     font-size: 14px;
-    border-radius: 50%;
-    padding:5px;
+    padding:3px;
+    border-radius: 15px;
   }
   
   .course-rating i {
@@ -443,42 +446,202 @@ margin:35px 0px;
   .sales-info {
     margin-top: 10px;
     color: #666;
+    font-weight: bold;
   }
   
   .course-price {
-    margin-top: 5px;
-    font-size: 18px;
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight:bold;
+    color:#BDBDBD;
   }
   .course-price strong {
+    margin-left:7px;
     color:#FF7B52;
+    
   }
   
   .cta-button {
     display: inline-block;
     margin-top: 10px;
+    /* margin-left:18px; */
     padding: 10px 20px;
-    background-color: #00c853;
-    color: white;
+    background-color: #FFFFFF;
+    color: #737373;
     text-decoration: none;
-    border-radius: 5px;
+    border-radius: 25px;
+    border:1px solid rgb(164, 246, 87);
+    
     font-weight: 700;
     transition: background-color 0.3s ease;
   }
+  /* expert teachers start */
+.card-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.card {
+    background-color: #ffffff;
+    border: 1px solid #e1e1e1;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 0 10px;
+    width: 323px;
+    height:688px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;  
+}
+
+.card.featured {
+    background-color: #2D4059;
+    color: #ffffff;
+    border: none;
+}
+
+.new-tag {
+    background-color: #E77C40;
+    color: #ffffff;
+    padding: 26px 16px;
+    border-radius: 50%;
+    position: absolute;
+    top: -20px;
+    
+    right: -20px;
+}
+
+.price {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.btn {
+    background-color: #A9D6D9;
+    color: #2D4059;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px 0;
+}
+
+.features {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+}
+
+.features li {
+    margin: 5px 0;
+}
+.fav-img{
+    justify-content: center;
+    align-items: center;
+    display:flex;
+    padding:50px 0px;
+}
+  /* expert teachers ends */
   
-  .cta-button:hover {
-    background-color: #00a94b;
-  }
-
-
 
 /* Footer */
-.footer {
+footer {
+    background-color: #f9fafb;
+    padding: 40px 0;
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 50px;
+  }
+  
+  .footer-column {
+    width: 18%;
+  }
+  
+  .footer-column h4 {
+    font-size: 16px;
+    color: #252B42;
+    margin-bottom: 15px;
+  }
+  
+  .footer-column ul {
+    list-style: none;
+  }
+  
+  .footer-column ul li {
+    margin-bottom: 10px;
+  }
+  
+  .footer-column ul li a {
+    text-decoration: none;
+    color: #737373;
+    font-size: 14px;
+    transition: color 0.3s;
+  }
+  
+  .footer-column ul li a:hover {
+    color: #252B42;
+  }
+  
+  .contact-info li {
+    color: #737373;
+    margin-bottom: 10px;
+    font-size: 14px;
+  }
+  
+  .contact-info i {
+    margin-right: 10px;
+  }
+  
+  .social-media {
+    margin-top: 20px;
+  }
+  
+  .social-media a {
+    margin-right: 10px;
+    color: #96BB7C;
+    font-size: 20px;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  .social-media a:hover {
+    color: #252B42;
+  }
+  
+  .footer-bottom {
+    background-color: #f1f1f1;
+    text-align: left;
     padding: 20px;
-    text-align: center;
-    background-color: #333;
-    color: #fff;
-    margin-top: 30px;
-}
+    margin-top: 40px;
+  }
+  
+  .footer-bottom p {
+    color: #737373;
+    font-size: 14px;
+    margin-left:200px;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 1024px) {
+    .footer-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .footer-column {
+      width: 100%;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+  }
 
 /* Responsive Design */
 @media (max-width: 768px) {
