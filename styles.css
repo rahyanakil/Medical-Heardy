@@ -419,8 +419,11 @@ margin:35px 0px;
   
   .course-rating {
     float: right;
-    color: #333;
+    color: #FFFFFF;
+    background-color: #2D4059;
     font-size: 14px;
+    border-radius: 50%;
+    padding:5px;
   }
   
   .course-rating i {
