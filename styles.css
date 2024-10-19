@@ -7,164 +7,185 @@
 }
 
 /* Navbar Section start*/
-/* Header Section */
-.header {
-    background: url('/Assets/hero-9-bg-shape-cover.png') no-repeat center center/cover;
-    height: 90vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-}
-
 .navbar {
-    display: flex;
-
-    align-items: center;
-    width: 100%;
-    padding: 20px 190px;
-    position: absolute;
-    top: 0;
-    left: 0;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 20px 190px;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 /* Logo Section */
 .logo h1 {
-    color: #000000;
-    font-size: 24px;
-    font-weight: bold;
+  color: #000000;
+  font-size: 24px;
+  font-weight: bold;
 }
 
 /* Navigation Links */
 .nav-links {
-    list-style-type: none;
-    display: flex;
+  list-style-type: none;
+  display: flex;
 }
 
 .nav-links li {
-    margin-left: 25px;
+  margin-left: 25px;
 }
 
 .nav-links a {
-    color: #737373;
-    font-weight: bold;
-    text-decoration: none;
-    transition: color 0.3s ease;
+  color: #737373;
+  font-weight: bold;
+  text-decoration: none;
+  transition: color 0.3s ease;
 }
 
 .nav-links a:hover {
-    color: #f0a500;
+  color: #f0a500;
 }
 
 /* Right Side (Sign In and Join Us Button) */
 .navbar-end ul {
-    list-style-type: none;
-    display: flex;
-    margin-left: 380px;
+  list-style-type: none;
+  display: flex;
+  margin-left: 380px;
 }
 
 .navbar-end li {
-    margin-left: 25px;
+  margin-left: 25px;
 }
 
 .navbar-end a {
-    color: #96BB7C;
-    font-weight: bold;
-    text-decoration: none;
-    transition: color 0.3s ease;
+  color: #96BB7C;
+  font-weight: bold;
+  text-decoration: none;
+  transition: color 0.3s ease;
 }
 
 /* Join Us Button Styling */
 .btn-join {
-    height:52px;
-    width:138px;
-    padding: 10px 25px;
-    background-color: #96BB7C;
-    color:white;
-    border:none;
-    border-radius: 5%;
-    font-weight: bold;
-    transition: background-color 0.3s ease;
-    margin:5px 0;
+  height: 52px;
+  width: 138px;
+  padding: 10px 25px;
+  background-color: #96BB7C;
+  color: white;
+  border: none;
+  border-radius: 5%;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  margin: 5px 0;
 }
 .navbar-end .btn-join {
-    color:white;
+  color: white;
 }
 
 .btn-join:hover {
-    background-color: #b2d896;
+  background-color: #b2d896;
 }
-/* navigation section end */
 
-/* Hero Section start*/
+/* Toggle Button */
+.toggle {
+  display: none;
+}
+
+.toggle-label {
+  display: none; /* Hide by default for desktop */
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.hamburger {
+  width: 30px;
+  height: 3px;
+  background: #333;
+  margin: 5px 0;
+  transition: all 0.3s ease;
+}
+/* navbar section end  */
+/* Header Section start */
+.header {
+  background: url('/Assets/hero-9-bg-shape-cover.png') no-repeat center center/cover;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+
+/* Hero Section start */
 .parent-hero-section {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    height: 70vh; 
-    padding: 0 30px; 
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 70vh; 
+  padding: 0 30px; 
 }
 
 .hero-section {
-    width: 55%;
-    align-items: flex-start;
-    justify-content: center;
-    text-align: left; 
+  width: 55%;
+  align-items: flex-start;
+  justify-content: center;
+  text-align: left; 
 }
 
 .hero-section h2 {
-    font-size: 48px;
-    color: #252B42;
-    width:512px;
+  font-size: 48px;
+  color: #252B42;
+  width: 512px;
 }
 
 .hero-section p {
-    font-size: 20px;
-    color: #96BB7C;
-    line-height: 1.5;
-    padding:30px 0px;
-    width:512px;  
+  font-size: 20px;
+  color: #96BB7C;
+  line-height: 1.5;
+  padding: 30px 0px;
+  width: 512px;  
 }
-.hero-text{
-    font-weight: bold;
-    padding:30px;
-    color:#96BB7C;
+
+.hero-text {
+  font-weight: bold;
+  padding: 30px;
+  color: #96BB7C;
 }
 
 .hero-img {
-    width: 45%;
-    height:95vh;
-    margin-top:70px;
-    display: flex;
-    justify-content: flex-end;
+  width: 45%;
+  height: 95vh;
+  margin-top: 70px;
+  display: flex;
+  justify-content: flex-end;
 }
 
 .hero-img img {
-    max-width: 100%; 
-    height: auto;
+  max-width: 100%; 
+  height: auto;
 }
-.quote-btn{
-    padding:15px 40px;
-    width: 195px;
-    height:52px;
-    color:#FFFFFF;
-    font-weight:bold;
-    background-color: #96BB7C;
-    border:none;
-    border-radius: 5%;
+
+.quote-btn {
+  padding: 15px 40px;
+  width: 195px;
+  height: 52px;
+  color: #FFFFFF;
+  font-weight: bold;
+  background-color: #96BB7C;
+  border: none;
+  border-radius: 5%;
 }
-.learn-btn{
-    padding:15px 40px;
-    width: 162px;
-    height:52px;
-    color:#96BB7C;
-    font-weight: bold;
-    background-color: #FFFFFF;
-    border-color:#96BB7C;
-    border-radius: 5%;
+
+.learn-btn {
+  padding: 15px 40px;
+  width: 162px;
+  height: 52px;
+  color: #96BB7C;
+  font-weight: bold;
+  background-color: #FFFFFF;
+  border-color: #96BB7C;
+  border-radius: 5%;
 }
-/* hero section end */
+/* Hero Section end */
 
 /* Courses Section start*/
 
@@ -630,31 +651,203 @@ footer {
   }
   
   /* Responsive Design */
-  @media (max-width: 1024px) {
-    .footer-container {
-      flex-direction: column;
-      align-items: center;
-    }
-  
-    .footer-column {
-      width: 100%;
-      margin-bottom: 20px;
-      text-align: center;
-    }
-  }
+
+
+
 
 /* Responsive Design */
+
+/* For mobile devices (max-width: 768px) */
 @media (max-width: 768px) {
-    .navbar {
-        flex-direction: column;
-        padding: 10px;
-    }
-
-    .service-cards {
-        flex-direction: column;
-    }
-
-    .hero-section h2 {
-        font-size: 32px;
-    }
+/* navbar section start  */
+.navbar {
+  padding: 20px 10px; /* Adjust padding */
 }
+.navbar-links {
+  display: none; /* Hide links by default */
+  flex-direction: column; /* Stack links vertically */
+  position: absolute;
+  top: 70px; /* Position below the navbar */
+  left: 0;
+  background-color: white; /* Background color */
+  width: 100%;
+  z-index: 1;
+  transition: max-height 0.3s ease-in-out;
+}
+.toggle:checked + .toggle-label + .navbar-links {
+  display: flex; /* Show links when toggled */
+}
+.toggle-label {
+  display: flex; /* Show toggle label */
+  margin-left: auto; /* Align toggle to the right */
+}
+.nav-links {
+  flex-direction: column; /* Stack links in dropdown */
+}
+.nav-links li {
+  margin: 10px 0; /* Adjust spacing */
+}
+.navbar-end {
+  display: none; /* Hide navbar-end in mobile */
+}
+/* navbar section end  */
+ /* hero section start  */
+ .parent-hero-section {
+  margin-top: 200px;
+  flex-direction: column; /* Stack hero section elements */
+  height: auto; /* Adjust height for mobile */
+}
+
+.hero-section {
+  margin-top: 100px;
+  width: 100%; /* Full width on mobile */
+  text-align: center; /* Center text */
+}
+
+.hero-section h2 {
+  
+  font-size: 36px; /* Adjust heading size */
+  width: auto; /* Remove width constraint */
+}
+
+.hero-section p {
+  font-size: 16px; /* Adjust paragraph size */
+  width: auto; /* Remove width constraint */
+}
+
+.hero-img {
+  width: 100%; /* Full width for image */
+  height: auto; /* Maintain aspect ratio */
+  margin-top: 20px; /* Space above the image */
+}
+ /* hero section end */
+.courses-section{
+  margin-top: 200px;
+}
+  .courses-cards {
+    margin-top: 0px;
+    margin-bottom: 0px;
+      flex-direction: column; /* Stack course cards */
+  }
+
+  .course-card {
+      width: 100%; /* Full width for course cards */
+      margin-bottom: 20px; /* Space between cards */
+  }
+
+  .individual-course-card {
+      width: 90%; /* Reduce width for individual course cards */
+  }
+
+  .footer-column {
+      width: 100%; /* Full width for footer columns */
+      text-align: center; /* Center text */
+  }
+
+  .social-media {
+      justify-content: center; /* Center social media links */
+  }
+}
+
+/* For tablets and smaller devices (max-width: 1024px) */
+@media (max-width: 1024px) {
+ .logo h1{
+  width: 300px;
+ }
+
+  .navbar {
+    padding: 20px 20px;
+    width:900px; /* Adjust padding for tablet */
+}
+.sign-in{
+justify-content: space-between;
+}
+.navbar-end{
+  justify-content: space-evenly;}
+.toggle-label {
+    display: none; /* Show toggle label on tablet */
+}
+.parent-hero-section {
+  flex-direction: column; /* Stack elements for tablet */
+  padding: 0 15px; /* Adjust padding for tablet */
+}
+
+.hero-section {
+  width: 100%; /* Full width for tablet */
+  text-align: center; /* Center text for tablet */
+  padding: 20px 0; /* Add padding for spacing */
+}
+
+.hero-section h2 {
+  font-size: 42px; /* Adjust heading size for tablet */
+  width: auto; /* Remove width constraint */
+}
+
+.hero-section p {
+  font-size: 18px; /* Adjust paragraph size for tablet */
+  width: auto; /* Remove width constraint */
+}
+
+.hero-img {
+  width: 100%; /* Full width for image on tablet */
+  height: auto; /* Maintain aspect ratio */
+  margin-top: 20px; /* Space above the image */
+}
+.courses-section{
+  margin-top:150px;
+}
+
+
+
+  .courses-cards {
+      flex-direction: row; /* Stack course cards */
+      align-items: center;
+      margin-bottom:0px;
+     /* Center cards */
+  }
+
+  .course-card {
+      width: 90%; /* Full width for cards */
+      margin-bottom: 20px; /* Space between cards */
+  }
+
+  .individual-course-card {
+      width: 100%; /* Full width for individual course cards */
+  }
+
+  .card-container {
+      flex-direction: column; /* Stack expert teacher cards */
+      align-items: center; /* Center cards */
+  }
+
+  .footer-container {
+      flex-direction: column; /* Stack footer columns */
+      align-items: center; /* Center footer content */
+  }
+
+  .footer-column {
+      width: 100%; /* Full width for footer columns */
+      margin-bottom: 20px; /* Space between footer columns */
+      text-align: center; /* Center text */
+  }
+}
+/* Responsive design end */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
