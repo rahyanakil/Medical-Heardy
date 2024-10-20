@@ -754,9 +754,7 @@ display:flex;
   
  
   /* Affordable section start  */
-  #packages{
-    
-  }
+  
   .packages-section{
     display: flex;
     flex-direction: column-reverse;
