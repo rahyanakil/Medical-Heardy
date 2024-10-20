@@ -7,6 +7,17 @@
 }
 
 /* Navbar Section start*/
+/* Header Section */
+.header {
+  background: url('/Assets/hero-9-bg-shape-cover.png') no-repeat center center/cover;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
 .navbar {
   display: flex;
   align-items: center;
@@ -102,19 +113,8 @@
   margin: 5px 0;
   transition: all 0.3s ease;
 }
+
 /* navbar section end  */
-/* Header Section start */
-.header {
-  background: url('/Assets/hero-9-bg-shape-cover.png') no-repeat center center/cover;
-  height: 90vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-}
-
-
 /* Hero Section start */
 .parent-hero-section {
   display: flex;
@@ -185,6 +185,7 @@
   border-color: #96BB7C;
   border-radius: 5%;
 }
+
 /* Hero Section end */
 
 /* Courses Section start*/
@@ -659,6 +660,9 @@ footer {
 
 /* For mobile devices (max-width: 768px) */
 @media (max-width: 768px) {
+  .container h1{
+    font-size: 35px;
+  }
 /* navbar section start  */
 .navbar {
   padding: 20px 10px; /* Adjust padding */
@@ -691,21 +695,19 @@ footer {
   display: none; /* Hide navbar-end in mobile */
 }
 /* navbar section end  */
- /* hero section start  */
- .parent-hero-section {
-  margin-top: 200px;
+
+.parent-hero-section {
   flex-direction: column; /* Stack hero section elements */
   height: auto; /* Adjust height for mobile */
 }
 
 .hero-section {
-  margin-top: 100px;
   width: 100%; /* Full width on mobile */
-  text-align: center; /* Center text */
+  text-align: center;
+  margin-top: 250px; /* Center text */
 }
 
 .hero-section h2 {
-  
   font-size: 36px; /* Adjust heading size */
   width: auto; /* Remove width constraint */
 }
@@ -720,8 +722,15 @@ footer {
   height: auto; /* Maintain aspect ratio */
   margin-top: 20px; /* Space above the image */
 }
+.hero-buttons{
+display:flex;
+
+}
+
  /* hero section end */
-.courses-section{
+ /* Courses cards section start  */
+ 
+ .courses-section{
   margin-top: 200px;
 }
   .courses-cards {
@@ -734,10 +743,40 @@ footer {
       width: 100%; /* Full width for course cards */
       margin-bottom: 20px; /* Space between cards */
   }
+  .card{
+    margin-top:25px;
+  }
 
   .individual-course-card {
-      width: 90%; /* Reduce width for individual course cards */
+      width: 50%; /* Reduce width for individual course cards */
+      height:auto;
   }
+  
+ 
+  /* Affordable section start  */
+  #packages{
+    
+  }
+  .packages-section{
+    display: flex;
+    flex-direction: column-reverse;
+ 
+  }
+  .video-container{
+    width:100%;
+    height:auto;
+  }
+  /* Affordable section end  */
+  /*Popular course-section start  */
+
+
+  .course-cards-container{
+    display: flex;
+    flex-direction: column;
+    
+    height:auto;
+  }
+  /*Popular course-section end  */
 
   .footer-column {
       width: 100%; /* Full width for footer columns */
@@ -751,21 +790,11 @@ footer {
 
 /* For tablets and smaller devices (max-width: 1024px) */
 @media (max-width: 1024px) {
- .logo h1{
-  width: 300px;
- }
-
   .navbar {
-    padding: 20px 20px;
-    width:900px; /* Adjust padding for tablet */
+    padding: 20px 30px; /* Adjust padding for tablet */
 }
-.sign-in{
-justify-content: space-between;
-}
-.navbar-end{
-  justify-content: space-evenly;}
 .toggle-label {
-    display: none; /* Show toggle label on tablet */
+    display: flex; /* Show toggle label on tablet */
 }
 .parent-hero-section {
   flex-direction: column; /* Stack elements for tablet */
@@ -797,10 +826,19 @@ justify-content: space-between;
   margin-top:150px;
 }
 
+.hero-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center; /* Center the buttons horizontally */
+  gap: 0px; /* Add space between the buttons */
+}
+.quote-btn, .learn-btn {
+  padding: 15px 40px; /* Ensure buttons have consistent padding */
 
+}
 
   .courses-cards {
-      flex-direction: row; /* Stack course cards */
+      flex-direction: column; /* Stack course cards */
       align-items: center;
       margin-bottom:0px;
      /* Center cards */
